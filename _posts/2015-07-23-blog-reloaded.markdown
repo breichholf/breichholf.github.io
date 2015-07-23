@@ -25,4 +25,4 @@ Ideally I'd like to add a few other things in the mornings (eg. meditate, cardio
 
 Let's see how things go.
 
-[^1] https://youtu.be/lSKpu_qGMH4
+[^1]: Value of a daily routine: https://youtu.be/lSKpu_qGMH4
