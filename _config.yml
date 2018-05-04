@@ -4,7 +4,7 @@ locale:  en_GB
 url:     "https://blog.reichholf.me"
 # email:   brian.reichholf@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A blog on bioinformatics, python coding, RNA data analysis and the chronicles
+  A blog on bioinformatics, python and R coding, RNA data analysis and the chronicles
   of a PhD student.
 baseurl: "" # the subpath of your site, e.g. /blog/
 
@@ -38,7 +38,7 @@ kramdown:
 owner:
   name: Brian Reichholf
   avatar: bio-profile.svg
-  bio: "Molecular Biologist by day, electrical engineer by night, and bioinformatician somewhere inbetween."
+  bio: "Molecular Biologys by day, electrical engineer by night, and bioinformatician somewhere inbetween."
   email: brian.reichholf@gmail.com
   disqus-shortname:
   twitter: breichholf #username
@@ -51,7 +51,7 @@ owner:
     ad-slot:
   bing-verify:
   github: breichholf #username
-  stackoverflow: #http://stackoverflow.com/users/123456/username
+  stackoverflow: https://stackoverflow.com/users/3045544/brian
   linkedin: brianreichholf #username
   xing: #username
   instagram: #username
