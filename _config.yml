@@ -1,7 +1,7 @@
 # Site settings
 title:   Brian Reichholf
 locale:  en_GB
-url:     "http://blog.reichholf.me"
+url:     "https://blog.reichholf.me"
 # email:   brian.reichholf@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A blog on bioinformatics, python coding, RNA data analysis and the chronicles
