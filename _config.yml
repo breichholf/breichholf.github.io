@@ -1,83 +1,27 @@
 # Site settings
 title:   Brian Reichholf
 locale:  en_GB
-url:     "https://blog.reichholf.me"
-# email:   brian.reichholf@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  A blog on bioinformatics, python and R coding, RNA data analysis and the chronicles
-  of a PhD student.
-baseurl: "" # the subpath of your site, e.g. /blog/
+url:     "https://brian.reichholf.me"
+description: > # this means to ignore newlines
+  A blog on bioinformatics, python and R coding, RNA data analysis and the chronicles of a PhD student.
 
-# Jekyll configuration
-permalink:   pretty
-markdown:    kramdown
-# markdown:    redcarpet
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-  - jekyll-mentions
-  - jemoji
+author_name:  Brian Reichholf
+author_image: /images/bio-profile.svg
+author_bio: >
+  Molecular Biologist by day, electrical engineer by night, and bioinformatician somewhere inbetween.
 
-jekyll-mentions:
-  base_url: https://twitter.com
-
-# redcarpet:
-#   extensions: ['smart', 'no_intra_emphesis', 'tables', 'fenced-code-blocks', 'autolink', 'strikethrough', 'superscript', 'highlight', 'footnotes', 'underline', 'with_toc_data']
+github_url:   "https://github.com/breichholf"
+twitter_url:  "https://twitter.com/breichholf"
+linkedin_url: "https://linkedin.com/in/brianreichholf"
+feed_url:     "https://feedburner.google.com/breichholf"
+so_url: https://stackoverflow.com/users/3045544/brian
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+  parse_block_html: true
+  #  smart_quotes: apos,apos,quot,quot
 
-# Site owner
-owner:
-  name: Brian Reichholf
-  avatar: bio-profile.svg
-  bio: "Molecular Biologys by day, electrical engineer by night, and bioinformatician somewhere inbetween."
-  email: brian.reichholf@gmail.com
-  disqus-shortname:
-  twitter: breichholf #username
-  facebook: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: breichholf #username
-  stackoverflow: https://stackoverflow.com/users/3045544/brian
-  linkedin: brianreichholf #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+permalink: /blog/:year/:month/:day/:title/
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md","CNAME"]
-
-# Build command options
-# lsi: TRUE
-
-# Front matter defaults:
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      author: "brian"
-      share: false
+timezone: Europe/Vienna
