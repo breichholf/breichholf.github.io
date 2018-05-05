@@ -1,5 +1,5 @@
 # Site settings
-title:   Brian Reichholf
+name:   Brian Reichholf
 locale:  en_GB
 url:     "https://www.reichholf.me"
 description: > # this means to ignore newlines
