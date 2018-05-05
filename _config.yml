@@ -1,7 +1,7 @@
 # Site settings
 title:   Brian Reichholf
 locale:  en_GB
-url:     "https://brian.reichholf.me"
+url:     "https://www.reichholf.me"
 description: > # this means to ignore newlines
   A blog on bioinformatics, python and R coding, RNA data analysis and the chronicles of a PhD student.
 
