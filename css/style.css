@@ -43,6 +43,12 @@ aside h1, aside h2, aside h3, aside h4 {
     margin: 0 0 0.5em 0;
 }
 
+h1, h2, h3, h4 {
+    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+    line-height: 1em;
+    color: #000;
+}
+
 aside ul {
     list-style-type: none;
     margin: 0;
@@ -91,18 +97,18 @@ p code, ul code {
 }
 
 .author-info {
-    font-size: 0.9em;
+    font-size: 0.8em;
     float: right;
     text-align: right;
     width: 165px;
 }
 
 .author-image {
-    -webkit-border-radius: 95px;
-    -moz-border-radius: 95px;
-    border-radius: 95px;
-    height: 70px;
-    width: 70px;
+    -webkit-border-radius: 115px;
+    -moz-border-radius: 115px;
+    border-radius: 115px;
+    height: 85px;
+    width: 85px;
 }
 
 .author-name {
@@ -137,7 +143,7 @@ p code, ul code {
 .author-bio {
     color: #666;
     font-style: italic;
-    line-height: 1.4em;
+    line-height: 1em;
     margin-top: 0.5em;
 }
 
