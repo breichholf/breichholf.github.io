@@ -1,0 +1,156 @@
+// general
+
+.section-header {
+  @include section_border;
+  margin-bottom: 1.25rem;
+
+  h2 {
+    @include sans;
+    font-weight: 900;
+    font-size: 1.75rem;
+    letter-spacing: -.05rem;
+    margin: 0;
+  }
+}
+
+.cv {
+    margin: 4em auto;
+    max-width: 42em;
+    padding: 0 4em;
+    @include serif;
+}
+
+// header
+
+.cv-header {
+    .cv-image {
+        @include border-radius(115px);
+        height: 85px;
+        width: 85px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .cv-name {
+        @include sans;
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.15rem;
+        margin: 0.5em 0;
+    }
+
+    .title-bar {
+        @include section_border;
+
+        margin-top: 2rem;
+        padding: .4rem 0;
+        font-size: 1.65rem;
+
+        @include clearfix;
+
+        .cv-job {
+            @include sans;
+            font-weight: 250;
+            font-size: 1.65rem;
+            letter-spacing: -0.1rem;
+            line-height: 1.75rem;
+            text-align: center;
+            margin: 0 0 .5rem;
+
+            @include media_larger_than_mobile {
+                float: left;
+                margin: 0;
+            }
+        }
+    }
+
+    .executive-summary {
+        margin: 0.5rem 0 1.5rem 0;
+        line-height: 1.6rem;
+
+        @include media_larger_than_mobile {
+            @include serif;
+            font-size: 1.125rem;
+        }
+  }
+}
+
+.cv-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    float: right;
+
+    .cv-link-item {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .cv-link {
+        display: inline-block;
+
+        &:hover .cv-icon path {
+            fill: #333;
+            @include transition(all .2s ease);
+        }
+    }
+
+    .cv-icon {
+        color: #c7c7c7;
+        height: 28px;
+    }
+}
+
+// resume content styles
+
+.content-section {
+    margin: 0 0 1rem;
+
+    .cv-item { margin-bottom: 1.25rem; }
+
+    .cv-item-title {
+        @include sans_bold;
+        margin: 0 0 .75rem;
+        font-size: 1.5rem;
+        letter-spacing: -.05rem;
+        line-height: 1;
+    }
+
+    .cv-item-details {
+        font-size: 1.125rem;
+        margin: 0 0 .75rem;
+        line-height: 1;
+    }
+
+    .cv-item-title,
+    .cv-item-details,
+    .cv-item-text,
+    .cv-item-list {
+        a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid;
+
+            &:hover {
+                border-bottom: none;
+                color: #9c9c9c;
+            }
+        }
+    }
+
+    .cv-item-list {
+        @include serif;
+    }
+
+    .cv-item-text {
+        @include serif;
+        margin: .75rem 0 0;
+    }
+}

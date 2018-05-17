@@ -7,7 +7,7 @@ a {
 }
 
 body {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Lora", "Minion Pro", Palatino, Georgia, Cambria, "Times New Roman", serif;
 }
 
 i {
@@ -44,7 +44,7 @@ aside h1, aside h2, aside h3, aside h4 {
 }
 
 h1, h2, h3, h4 {
-    font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1em;
     color: #000;
 }
@@ -101,6 +101,7 @@ p code, ul code {
     float: right;
     text-align: right;
     width: 165px;
+    font-family: "Open Sans", Roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .author-image {
@@ -122,7 +123,7 @@ p code, ul code {
 .home-nav ul {
     font-size: 1.2em;
     list-style-type: none;
-    margin-top: 1em;
+    margin-top: 0.5em;
     padding: 0;
 }
 
@@ -135,8 +136,13 @@ p code, ul code {
     text-decoration: none;
 }
 
+.nav {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
 .nav a {
-    padding-left: 1em;
+    padding-left: 0.5em;
     text-decoration: none;
 }
 
@@ -153,9 +159,15 @@ p code, ul code {
     border-bottom: 1px solid #666;
 }
 
+.important-link {
+    text-decoration: underline;
+    color: #990000 !important;
+}
+
 .right-column {
     max-width: 40em;
     padding: 0 4em;
+    font-family: "Open Sans", Roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .post-meta {

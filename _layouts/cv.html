@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    <div class="cv pure-g" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
+      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
+
+      {% include cv_header.html %}
+
+      <section class="content-section pure-u-1">
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+        {% for job in site.data.experience %}
+        <div class="cv-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="cv-item-title" itemprop="name">
+            {% if job.url %}<a href="{{ job.url }}">{{ job.company }}</a>
+            {% else %}{{ job.company }}{% endif %}
+          </h3>
+          <h4 class="cv-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="cv-item-text">{{ job.summary }}</p>
+        </div>
+        {% endfor %}
+      </section>
+
+      <section class="content-section pure-u-1">
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+        {% for education in site.data.education %}
+        <div class="cv-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="cv-item-title" itemprop="name">{{ education.uni }}</h3>
+          <h4 class="cv-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
+          <p class="cv-item-text">{{ education.summary }}</p>
+        </div>
+        {% endfor %}
+      </section>
+
+      {% if site.data.project %}
+      <section class="content-section pure-u-1">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+        {% for project in site.data.project %}
+        <div class="cv-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h3 class="cv-item-title" itemprop="name">
+            {% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>
+            {% else %}{{ project.project }}{% endif %}
+          </h3>
+          <h4 class="cv-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
+          <p class="cv-item-text">{{ project.description }}</p>
+        </div>
+        {% endfor %}
+
+      </section>
+      {% endif %}
+
+      <section class="content-section pure-u-1">
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+        {% for skill in site.data.skill %}
+        <div class="cv-item">
+          <h4 class="cv-item-details">{{ skill.skill }}</h4>
+          <p class="cv-item-text">{{ skill.description }}</p>
+        </div>
+        {% endfor %}
+      </section>
+
+      <section class="content-section pure-u-1">
+        <header class="section-header">
+          <h2>Outside Interests</h2>
+        </header>
+        <div class="cv-item">
+          <ul class="cv-item-list">
+            {% for interest in site.data.interest %}
+            <li>{{ interest.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section pure-u-1">
+        <header class="section-header">
+          <h2>Associations</h2>
+        </header>
+        {% for association in site.data.association %}
+        <div class="cv-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h3 class="cv-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organisation }}</a>{% else %}{{ association.organisation }}{% endif %}</h3>
+          <h4 class="cv-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
+          <p class="cv-item-text">{{ association.summary }}</p>
+        </div>
+        {% endfor %}
+      </section>
+
+    </div>
+  </body>
+</html>

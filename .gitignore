@@ -2,3 +2,6 @@ _site
 _vendor
 .archive
 .sass-cache
+.DS_Store
+Gemfile.lock
+.jekyll-metadata

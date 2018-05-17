@@ -1,6 +1,8 @@
 # Personal website
 
-This is my revised set up for a personal website and blog. It's a fork from **@[emaadmanzoor][1]**'s [blog][2].
+This is my revised set up for a personal website and blog. It's a fork from **@[emaadmanzoor][1]**'s [blog][2]. The included online CV has been adapted and included from **@[jglovier][12]** [resume-template][13].
+
+CSS has been adapted to be consistent throughout.
 
 Here are the details from the original README:
 
@@ -35,3 +37,5 @@ I also use icons from [FontAwesome][11].
 [9]: http://aaronmoodie.com/
 [10]: http://mnmlist.com/
 [11]: http://fortawesome.github.io/Font-Awesome/icons/
+[12]: https://github.com/jglovier
+[13]: https://github.com/jglovier/resume-template
