@@ -165,9 +165,20 @@ p code, ul code {
 }
 
 .right-column {
+    @include serif;
     max-width: 40em;
     padding: 0 4em;
-    font-family: "Open Sans", Roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    a {
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid;
+
+        &:hover {
+            border-bottom: none;
+            color: #9c9c9c;
+        }
+    }
 }
 
 .post-meta {
