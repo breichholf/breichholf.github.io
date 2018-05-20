@@ -1,17 +1,115 @@
-a {
-    color: #000;
+//main
+
+.container {
+    margin: 9em 0 3em 0;
 }
 
-.title a:hover {
-  text-decoration: underline;
+a {
+    color: #333;
 }
 
 body {
-    font-family: "Lora", "Minion Pro", Palatino, Georgia, Cambria, "Times New Roman", serif;
+    @include serif;
 }
 
 i {
     vertical-align: middle;
+}
+
+// left column
+
+.author-info {
+    font-size: 0.8em;
+    float: right;
+    text-align: right;
+    width: 165px;
+    @include sans;
+}
+
+.author-image {
+    -webkit-border-radius: 115px;
+    -moz-border-radius: 115px;
+    border-radius: 115px;
+    height: 85px;
+    width: 85px;
+}
+
+.author-name {
+    margin: 0.2em 0;
+}
+
+.author-name a {
+    text-decoration: none;
+}
+
+.home-nav {
+    a {
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+            color: #9c9c9c;
+        }
+    }
+}
+
+.home-nav ul {
+    font-size: 1.2em;
+    list-style-type: none;
+    margin-top: 0.5em;
+    padding: 0;
+}
+
+.home-nav ul li {
+    margin-bottom: 0.5em;
+}
+
+.nav {
+    margin: 0.25em 0;
+    font-size: 1.2em;
+}
+
+.nav a {
+    display: inline-block;
+    padding-left: 0.5em;
+
+    &:hover .nav-icon path {
+        fill: #9c9c9c;
+        @include transition(all .2s ease);
+    }
+}
+
+.nav-icon {
+    color: #333;
+    height: 28px;
+}
+
+
+.author-bio {
+    color: #666;
+    font-style: italic;
+    line-height: 1em;
+    margin-top: 0.5em;
+}
+
+.important-link {
+    a {
+        color: #990000;
+        border-bottom: 1px solid;
+
+        &:hover {
+            border-bottom: none;
+            color: #9c9c9c;
+        }
+    }
+}
+
+// blog entries -- right column
+
+.right-column {
+    max-width: 40em;
+    padding: 0 4em;
+    @include serif;
 }
 
 blockquote {
@@ -44,7 +142,7 @@ aside h1, aside h2, aside h3, aside h4 {
 }
 
 h1, h2, h3, h4 {
-    font-family: "Open Sans", Roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @include sans;
     line-height: 1em;
     color: #000;
 }
@@ -69,7 +167,7 @@ th {
 }
 
 td {
-    padding 0.4em 0 0 10px;
+    padding: 0.4em 0 0 10px;
 }
 
 thead {
@@ -92,84 +190,6 @@ p code, ul code {
     vertical-align: middle;
 }
 
-.container {
-    margin: 9em 0 3em 0;
-}
-
-.author-info {
-    font-size: 0.8em;
-    float: right;
-    text-align: right;
-    width: 165px;
-    font-family: "Open Sans", Roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.author-image {
-    -webkit-border-radius: 115px;
-    -moz-border-radius: 115px;
-    border-radius: 115px;
-    height: 85px;
-    width: 85px;
-}
-
-.author-name {
-    margin: 0.2em 0;
-}
-
-.author-name a {
-    text-decoration: none;
-}
-
-.home-nav ul {
-    font-size: 1.2em;
-    list-style-type: none;
-    margin-top: 0.5em;
-    padding: 0;
-}
-
-.home-nav ul li {
-    margin-bottom: 0.5em;
-}
-
-.home-nav a {
-    color: #333;
-    text-decoration: none;
-}
-
-.nav {
-    margin: 0.5em 0;
-    font-size: 1.2em;
-}
-
-.nav a {
-    padding-left: 0.5em;
-    text-decoration: none;
-}
-
-.author-bio {
-    color: #666;
-    font-style: italic;
-    line-height: 1em;
-    margin-top: 0.5em;
-}
-
-.author-bio a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid #666;
-}
-
-.important-link {
-    text-decoration: underline;
-    color: #990000 !important;
-}
-
-.right-column {
-    max-width: 40em;
-    padding: 0 4em;
-    font-family: "Open Sans", Roboto, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .post-meta {
     font-size: 0.9em;
     line-height: 1.5em;
@@ -178,7 +198,7 @@ p code, ul code {
     padding: 0;
 }
 
-.post-meta li, .post-meta a {
+.post-meta li {
     color: #999;
 }
 
@@ -224,12 +244,19 @@ p.feature-image img {
     margin: 0;
 }
 
-.title a, .post-meta a {
-    text-decoration: none;
-}
+.title,
+.content,
+.post-meta {
+    a {
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid;
 
-.post-meta a:hover {
-    text-decoration: underline;
+        &:hover {
+            border-bottom: none;
+            color: #9c9c9c;
+        }
+    }
 }
 
 .title i {
@@ -277,7 +304,7 @@ p.feature-image img {
   padding-top: 30px;
   height: 0;
   overflow: auto;
-  -webkit-overflow-scrolling:touch;
+  -webkit-overflow-scrolling: touch;
 }
 
 .content .frame iframe {
