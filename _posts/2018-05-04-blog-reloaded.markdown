@@ -16,6 +16,6 @@ In addition, I'm constantly working on keeping up a healthy daily routine[^1]. I
 - Monday, Wednesday & Friday morning: workout
 - Cycle to work when weather permits
 
-In addition, I'm making an effort to start writing more regularly, read more to relax or for constant education. I'm aiming for this to translate in to some ramblings on this blog, following my thought and path in life.
+In addition, I'm making an effort to start writing more regularly, read more to relax or for constant education. I'm aiming for this to translate in to some ramblings on this blog, following my thoughts and path in life.
 
 [^1]: [Value of a daily routine](https://youtu.be/lSKpu_qGMH4)
