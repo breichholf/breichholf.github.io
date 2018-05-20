@@ -3,5 +3,3 @@ _vendor
 .archive
 .sass-cache
 .DS_Store
-Gemfile.lock
-.jekyll-metadata
